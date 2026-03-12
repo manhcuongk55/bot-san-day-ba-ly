@@ -1256,6 +1256,171 @@ a {
 }
 
 /* ═══════════════════════════════════════════════
+   SOLON GAN — CROSS-SELL
+   ═══════════════════════════════════════════════ */
+.solon-gan {
+    background: linear-gradient(180deg, var(--white) 0%, #FFF5F5 50%, var(--cream) 100%);
+}
+
+.solon-wrapper {
+    border-radius: var(--radius-xl);
+    padding: var(--space-3xl);
+    background: var(--white);
+    box-shadow: var(--shadow-lg);
+    border: 1px solid rgba(231, 76, 60, 0.1);
+}
+
+.solon-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: var(--space-3xl);
+    align-items: center;
+}
+
+.solon-desc {
+    font-size: 1.05rem;
+    color: var(--gray-700);
+    line-height: 1.8;
+    margin: var(--space-md) 0 var(--space-xl);
+}
+
+.solon-features {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+    margin-bottom: var(--space-xl);
+}
+
+.solon-feature {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-md);
+    padding: var(--space-md);
+    border-radius: var(--radius-sm);
+    background: var(--gray-100);
+    transition: all var(--duration-fast);
+}
+
+.solon-feature:hover {
+    background: rgba(231, 76, 60, 0.05);
+    transform: translateX(4px);
+}
+
+.solon-feature i {
+    margin-top: 3px;
+    font-size: 1rem;
+    min-width: 20px;
+}
+
+.solon-feature span {
+    font-size: 0.92rem;
+    color: var(--gray-700);
+    line-height: 1.5;
+}
+
+.solon-combo-box {
+    background: linear-gradient(135deg, rgba(231, 76, 60, 0.06), rgba(231, 76, 60, 0.02));
+    border: 2px dashed rgba(231, 76, 60, 0.25);
+    border-radius: var(--radius-md);
+    padding: var(--space-xl);
+    text-align: center;
+}
+
+.combo-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #E74C3C, #C0392B);
+    color: var(--white);
+    font-size: 0.82rem;
+    font-weight: 700;
+    padding: 6px 18px;
+    border-radius: var(--radius-full);
+    margin-bottom: var(--space-md);
+    letter-spacing: 1px;
+}
+
+.solon-combo-box p {
+    font-size: 0.95rem;
+    color: var(--gray-700);
+    margin-bottom: var(--space-md);
+}
+
+/* Solon Visual Card */
+.solon-card {
+    text-align: center;
+    padding: var(--space-3xl) var(--space-xl);
+    border-radius: var(--radius-xl);
+    background: linear-gradient(135deg, rgba(231,76,60,0.03), rgba(39,174,96,0.03)) !important;
+    border: 1px solid rgba(231, 76, 60, 0.12) !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.solon-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at top right, rgba(231,76,60,0.06) 0%, transparent 60%);
+    pointer-events: none;
+}
+
+.solon-icon-large {
+    font-size: 4rem;
+    margin-bottom: var(--space-lg);
+}
+
+.solon-card h3 {
+    font-family: var(--font-display);
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #C0392B;
+    letter-spacing: 3px;
+    margin-bottom: var(--space-sm);
+}
+
+.solon-tagline {
+    font-size: 0.92rem;
+    color: var(--gray-500);
+    font-style: italic;
+    margin-bottom: var(--space-xl);
+}
+
+.solon-stats-mini {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-2xl);
+}
+
+.solon-stat-item {
+    text-align: center;
+}
+
+.solon-stat-val {
+    display: block;
+    font-family: var(--font-display);
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #E74C3C;
+    line-height: 1;
+}
+
+.solon-stat-lbl {
+    display: block;
+    font-size: 0.78rem;
+    color: var(--gray-500);
+    margin-top: 4px;
+}
+
+@media (max-width: 768px) {
+    .solon-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .solon-wrapper {
+        padding: var(--space-xl);
+    }
+}
+
+/* ═══════════════════════════════════════════════
    PARTNER INVITATION
    ═══════════════════════════════════════════════ */
 .partner {
